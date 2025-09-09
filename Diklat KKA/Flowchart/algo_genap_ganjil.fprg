@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hendri Murti"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-08 02:47:51 PM"/>
+        <attribute name="created" value="SGVuZHJpIE11cnRpO01TSTsyMDI0LTEyLTI0OyIwODo0Nzo0MSAiOzI1OTI="/>
+        <attribute name="edited" value="SGVuZHJpIE11cnRpO01TSTsyMDI0LTEyLTI0OyIwOToyNTo1MCAiOzE7MjY5Nw=="/>
+        <attribute name="edited" value="TEtQMDE7TFBUT1BfTEtQMDE7MjAyNS0wOS0wODswMjo0Nzo1MSBQTTsxOzI1NDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, sisa" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan bilangan bulat&quot;" newline="True"/>
+            <input variable="x"/>
+            <assign variable="sisa" expression="x mod 2"/>
+            <if expression="sisa = 0">
+                <then>
+                    <output expression="x &amp; &quot; adalah bilangan genap&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="x &amp; &quot; adalah bilangan ganjil&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

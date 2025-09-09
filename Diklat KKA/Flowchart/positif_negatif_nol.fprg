@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LKP01"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-08 03:33:12 PM"/>
+        <attribute name="created" value="TEtQMDE7TFBUT1BfTEtQMDE7MjAyNS0wOS0wODswMzoyNjo1NyBQTTsyNDQz"/>
+        <attribute name="edited" value="TEtQMDE7TFBUT1BfTEtQMDE7MjAyNS0wOS0wODswMzozMzoxMiBQTTsxOzI1NDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inputkan Angka&quot;" newline="True"/>
+            <input variable="angka"/>
+            <if expression="angka&gt;=0">
+                <then>
+                    <if expression="angka==0">
+                        <then>
+                            <output expression="&quot;Angka Nol&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Angka Positif&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Negatif&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LKP01"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-08 07:56:04 PM"/>
+        <attribute name="created" value="TEtQMDE7TFBUT1BfTEtQMDE7MjAyNS0wOS0wODswNzozMjowMSBQTTsyNDMz"/>
+        <attribute name="edited" value="TEtQMDE7TFBUT1BfTEtQMDE7MjAyNS0wOS0wODswNzo1NjowNCBQTTsxOzI1NTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="berat, tinggi, bmi" type="Real" array="False" size=""/>
+            <output expression="&quot;Inputkan berat badan dalam satuan (KG)&quot;" newline="True"/>
+            <input variable="berat"/>
+            <output expression="&quot;Inputkan tinggit badan dalam satuan (M)&quot;" newline="True"/>
+            <input variable="tinggi"/>
+            <assign variable="bmi" expression="berat/(tinggi*tinggi)"/>
+            <output expression="&quot;BMI = &quot;&amp;bmi" newline="True"/>
+            <if expression="bmi&lt;29.9">
+                <then>
+                    <if expression="bmi&lt;24.9">
+                        <then>
+                            <if expression="bmi&lt;18.5">
+                                <then>
+                                    <output expression="&quot;Terlalu Kurus&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Ideal&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Lumayan Gemuk&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Obesitas&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

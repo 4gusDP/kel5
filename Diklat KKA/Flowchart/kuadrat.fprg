@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LKP01"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-08 07:19:48 PM"/>
+        <attribute name="created" value="TEtQMDE7TFBUT1BfTEtQMDE7MjAyNS0wOS0wODswNzoxMzo0OSBQTTsyNDQ0"/>
+        <attribute name="edited" value="TEtQMDE7TFBUT1BfTEtQMDE7MjAyNS0wOS0wODswNzoxOTo0OCBQTTsyOzI1NTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka, kuadrat" type="Integer" array="False" size=""/>
+            <output expression="&quot;inputkan angka&quot;" newline="True"/>
+            <input variable="angka"/>
+            <assign variable="kuadrat" expression="angka*angka"/>
+            <output expression="&quot;Hasil Kuadrat dari angka &quot;&amp;angka&amp;&quot; kuadrat = &quot;&amp;kuadrat" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

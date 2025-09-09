@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LKP01"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-08 07:25:16 PM"/>
+        <attribute name="created" value="TEtQMDE7TFBUT1BfTEtQMDE7MjAyNS0wOS0wODswNDo0Nzo0NSBQTTsyNDQ0"/>
+        <attribute name="edited" value="TEtQMDE7TFBUT1BfTEtQMDE7MjAyNS0wOS0wODswNzoyNToxNiBQTTsyOzI1NTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, a, jml" type="Integer" array="False" size=""/>
+            <declare name="bil" type="Integer" array="True" size="5"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="jml" expression="0"/>
+            <for variable="a" start="0" end="4" direction="inc" step="1">
+                <assign variable="bil[a]" expression="i"/>
+                <output expression="bil[a] &amp; &quot;, &quot;" newline="False"/>
+                <assign variable="jml" expression="bil[a]+jml"/>
+                <assign variable="i" expression="i+1"/>
+            </for>
+            <output expression="&quot;&quot;" newline="True"/>
+            <output expression="jml" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

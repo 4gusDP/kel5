@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value="contoh 1"/>
+        <attribute name="authors" value="DELL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-08 10:38:07 PM"/>
+        <attribute name="created" value="REVMTDtERVNLVE9QLTZIT00wTzc7MjAyNS0wOS0wODswMTo1NjowMCBQTTsyNjE4"/>
+        <attribute name="edited" value="REVMTDtERVNLVE9QLTZIT00wTzc7MjAyNS0wOS0wODswNDoxNTo0MyBQTTs0OzI3MzQ="/>
+        <attribute name="edited" value="TEtQMDE7TFBUT1BfTEtQMDE7MjAyNS0wOS0wODsxMDozODowNyBQTTsxOzI1NDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bilanganBulat" type="Integer" array="True" size="5"/>
+            <declare name="jumlah, masukan, i" type="Integer" array="False" size=""/>
+            <assign variable="jumlah" expression="0"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <input variable="masukan"/>
+                <assign variable="bilanganBulat[i]" expression="random(20)"/>
+                <assign variable="jumlah" expression="jumlah +bilanganBulat[i]"/>
+            </for>
+            <output expression="jumlah" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

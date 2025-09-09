@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LKP01"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-08 02:30:44 PM"/>
+        <attribute name="created" value="TEtQMDE7TFBUT1BfTEtQMDE7MjAyNS0wOS0wODswMTo1NToyNiBQTTsyNDM5"/>
+        <attribute name="edited" value="TEtQMDE7TFBUT1BfTEtQMDE7MjAyNS0wOS0wODswMjozMDo0NCBQTTsyOzI1NDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka1, angka2, hasil" type="Integer" array="False" size=""/>
+            <output expression="&quot;inputkan angka 1&quot;" newline="True"/>
+            <input variable="angka1"/>
+            <output expression="&quot;Inputkan angka 2&quot;" newline="True"/>
+            <input variable="angka2"/>
+            <assign variable="hasil" expression="angka1+angka2"/>
+            <output expression="&quot;hasil =&quot; &amp;hasil" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LKP01"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-08 10:45:08 PM"/>
+        <attribute name="created" value="TEtQMDE7TFBUT1BfTEtQMDE7MjAyNS0wOS0wODswNDo0Nzo0NSBQTTsyNDQ0"/>
+        <attribute name="edited" value="TEtQMDE7TFBUT1BfTEtQMDE7MjAyNS0wOS0wODsxMDo0NTowOCBQTTs0OzI1NDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, a, b, jml1, jml2, jml3" type="Integer" array="False" size=""/>
+            <declare name="bil" type="Integer" array="True" size="5"/>
+            <assign variable="jml1" expression="0"/>
+            <for variable="a" start="0" end="4" direction="inc" step="1">
+                <assign variable="bil[a]" expression="random(20)"/>
+                <output expression="bil[a] &amp; &quot;, &quot;" newline="False"/>
+                <assign variable="jml1" expression="bil[a]+jml1"/>
+            </for>
+            <output expression="&quot;&quot;" newline="True"/>
+            <output expression="jml1" newline="True"/>
+            <assign variable="jml2" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <do expression="i&lt;=4">
+                <assign variable="bil[i]" expression="random(20)"/>
+                <output expression="bil[i] &amp; &quot;, &quot;" newline="False"/>
+                <assign variable="jml2" expression="bil[i]+jml2"/>
+                <assign variable="i" expression="i+1"/>
+            </do>
+            <output expression="&quot;&quot;" newline="True"/>
+            <output expression="jml2" newline="True"/>
+            <assign variable="jml3" expression="0"/>
+            <assign variable="b" expression="0"/>
+            <while expression="b&lt;=4">
+                <assign variable="bil[b]" expression="random(20)"/>
+                <output expression="bil[b] &amp; &quot;, &quot;" newline="False"/>
+                <assign variable="jml3" expression="bil[b]+jml3"/>
+                <assign variable="b" expression="b+1"/>
+            </while>
+            <output expression="&quot;&quot;" newline="True"/>
+            <output expression="jml3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
